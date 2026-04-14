@@ -37,7 +37,7 @@ function Webservicescards() {
   ];
 
   return (
-    <div className="grid md:grid-cols-3 gap-10">
+    <div className="grid md:grid-cols-3 gap-6 md:gap-10">
       {services.map((service, index) => (
         <WebserviceCard key={index} {...service} />
       ))}

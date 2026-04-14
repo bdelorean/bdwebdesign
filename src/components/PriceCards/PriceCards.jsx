@@ -51,7 +51,7 @@ function Pricecards() {
   ]
 
   return (
-    <div className="pricecards-grid grid md:grid-cols-4 gap-8">
+    <div className="pricecards-grid grid md:grid-cols-4 gap-10 md:gap-8">
       {cards.map((card, index) => (
         <Pricecard key={index} {...card} />
       ))}

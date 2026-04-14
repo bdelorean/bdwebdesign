@@ -24,7 +24,7 @@ const CheckIcon = () => (
 
 function GraphicDesignSection() {
   return (
-    <section className="flex items-center justify-between  p-10 bg-gray-100 md:py-24 md:pl-24">
+    <section className="flex flex-col gap-10 px-6 py-16 md:flex-row md:items-center md:justify-between md:gap-16 bg-gray-100 md:py-24 md:pl-24">
       {/* LEFT */}
       <div className="flex flex-col gap-4">
         <Title title="Graphic Design" />
@@ -51,7 +51,7 @@ function GraphicDesignSection() {
         <img
           src={banner}
           alt="banner graphic design"
-          className="max-w-[780px] h-auto object-cover drop-shadow-2xl"
+          className="md:max-w-[780px] h-auto object-cover drop-shadow-2xl"
         />
       </div>
     </section>

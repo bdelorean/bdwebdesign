@@ -24,7 +24,7 @@ function ImageSlider() {
         autoplay={{ delay: 2500, disableOnInteraction: false }}
         pagination={{ clickable: true }}
         slidesPerView={1}
-        className="w-full h-[80vh]"
+        className="w-full md:h-[80vh]"
       >
         {images.map((img, index) => (
           <SwiperSlide key={index}>
