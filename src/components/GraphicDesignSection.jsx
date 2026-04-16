@@ -3,16 +3,16 @@ import Text from "../components/Text";
 import banner from "../assets/images/banner.webp";
 
 const features = [
-  "Logo’s en visuele identiteit",
+  "Logo's en visuele identiteit",
   "Visitekaartjes",
-  "Brochures en menu’s",
+  "Brochures en menu's",
   "Social media content design",
 ];
 
 const CheckIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    className="w-3 h-3 text-white"
+    className="h-3 w-3 text-white"
     fill="none"
     viewBox="0 0 24 24"
     stroke="currentColor"
@@ -24,8 +24,7 @@ const CheckIcon = () => (
 
 function GraphicDesignSection() {
   return (
-    <section className="flex flex-col gap-10 px-6 py-16 md:flex-row md:items-center md:justify-between md:gap-16 bg-gray-100 md:py-24 md:pl-24">
-      {/* LEFT */}
+    <section className="flex flex-col gap-10 bg-gray-100 px-6 py-16 md:flex-row md:items-center md:justify-between md:gap-16 md:py-24 md:pl-24">
       <div className="flex flex-col gap-4">
         <Title title="Graphic Design" />
 
@@ -34,24 +33,21 @@ function GraphicDesignSection() {
         <ul className="space-y-2">
           {features.map((item, index) => (
             <li key={index} className="flex items-start gap-3">
-              {/* ICON */}
-              <div className="bg-accent rounded-full p-1 flex items-center justify-center mt-1">
+              <div className="mt-1 flex items-center justify-center rounded-full bg-accent p-1">
                 <CheckIcon />
               </div>
 
-              {/* TEXT */}
               <span className="text-gray-600">{item}</span>
             </li>
           ))}
         </ul>
       </div>
 
-      {/* RIGHT */}
       <div>
         <img
           src={banner}
           alt="banner graphic design"
-          className="md:max-w-[780px] h-auto object-cover drop-shadow-2xl"
+          className="h-auto object-cover drop-shadow-2xl md:max-w-[780px]"
         />
       </div>
     </section>

@@ -236,9 +236,12 @@ function Over() {
           />
         </div>
 
-        <div className="mt-10 grid gap-8 md:grid-cols-4 md:gap-6">
+        <div className="mt-10 grid gap-x-6 gap-y-12 md:grid-cols-4 md:gap-6">
           {projects.map((project, index) => (
-            <div key={project.title} className="flex flex-col items-center gap-5">
+            <div
+              key={project.title}
+              className="flex flex-col items-center gap-3 md:gap-5"
+            >
               <article
                 className="group flex aspect-[0.78] w-full items-center justify-center overflow-hidden rounded-[24px] bg-cover bg-center p-6 text-center shadow-[0_10px_24px_rgba(15,23,42,0.08)] transition-all duration-300 ease-out hover:-translate-y-[2px] hover:shadow-[0_10px_12px_rgba(15,23,42,0.18)]"
                 style={{

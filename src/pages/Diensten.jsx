@@ -9,6 +9,7 @@ import LastCTA from "../components/LastCTA/LastCTA";
 import Prices from "../components/Prices";
 import WebServices from "../components/WebServices";
 import GraphicDesignSection from "../components/GraphicDesignSection";
+
 const whatsappOfferLink =
   "https://wa.me/31626239678?text=Hoi!%20Ik%20wil%20graag%20een%20offerte%20aanvragen%20voor%20een%20website.";
 
@@ -28,23 +29,23 @@ function Diensten() {
             subheading={
               <>
                 Maatwerk websites die jouw bedrijf versterken <br />
-                Voor zzp’ers en kleine bedrijven die online professioneel willen
+                Voor zzp'ers en kleine bedrijven die online professioneel willen
                 groeien.
               </>
             }
           />
-          <div className="flex flex-col md:flex-row space-between gap-9">
+          <div className="flex flex-col gap-9 md:flex-row space-between">
             <PrimaryButton
               href={whatsappOfferLink}
-              text="Offerte aanvragen →"
+              text="Offerte aanvragen ->"
               className="shadow-[0_4px_10px_theme(colors.accent/25%)]"
             />
             <SecondaryButton to="/projecten" text="Bekijk portfolio" />
           </div>
         </div>
       </HeroInner>
-      <ServicesSlider />
 
+      <ServicesSlider />
       <WebServices />
       <GraphicDesignSection />
       <Prices />

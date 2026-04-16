@@ -1,11 +1,11 @@
-import Pricecard from "./Pricecard"
+import Pricecard from "./Pricecard";
 
 function Pricecards() {
   const cards = [
     {
       label: "Basis",
       title: "One page site",
-      price: "340 €",
+      price: "350 €",
       features: [
         "Modern & responsive design",
         "Overzichtelijke structuur",
@@ -14,17 +14,17 @@ function Pricecards() {
       ],
     },
     {
-      label: "Groei",                 // 👈 label normal
-      badge: "MEEST GEKOZEN",        // 👈 badge EXTRA
+      label: "Groei",
+      badge: "MEEST GEKOZEN",
       title: "Business Website",
       price: "750 €",
       features: [
         "Meerdere pagina's",
         "Duidelijke structuur",
         "Uitgebreide informatie",
-        "Groei klaar (indien gewenst)",
+        "Gratis logo-ontwerp inbegrepen",
       ],
-      highlighted: true,             // 👈 doar pentru stil
+      highlighted: true,
     },
     {
       label: "E-commerce",
@@ -40,7 +40,7 @@ function Pricecards() {
     {
       label: "Design",
       title: "Graphic Design",
-      price: "v.a 50 €",
+      price: "v.a. 50 €",
       features: [
         "Shopify of WordPress",
         "Veilige betaalmethoden",
@@ -48,15 +48,15 @@ function Pricecards() {
         "Gebruiksvriendelijke shop",
       ],
     },
-  ]
+  ];
 
   return (
-    <div className="pricecards-grid grid md:grid-cols-4 gap-10 md:gap-8">
+    <div className="pricecards-grid grid gap-10 md:grid-cols-4 md:gap-8">
       {cards.map((card, index) => (
         <Pricecard key={index} {...card} />
       ))}
     </div>
-  )
+  );
 }
 
-export default Pricecards
+export default Pricecards;

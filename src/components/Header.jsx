@@ -14,7 +14,9 @@ function Header() {
   };
   const getMenuUnderlineClass = (path) =>
     `pointer-events-none absolute left-0 bottom-0 h-[2px] w-full origin-center rounded-full bg-accent transition-transform duration-300 ease-out ${
-      location.pathname === path ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"
+      location.pathname === path
+        ? "scale-x-100"
+        : "scale-x-0 group-hover:scale-x-100"
     }`;
 
   return (
@@ -35,13 +37,13 @@ function Header() {
             Diensten
             <span className={getMenuUnderlineClass("/diensten")} />
           </Link>
-          <Link to="/over" className={getMenuLinkClass("/over")}>
-            Over mij
-            <span className={getMenuUnderlineClass("/over")} />
-          </Link>
           <Link to="/projecten" className={getMenuLinkClass("/projecten")}>
             Projecten
             <span className={getMenuUnderlineClass("/projecten")} />
+          </Link>
+          <Link to="/over" className={getMenuLinkClass("/over")}>
+            Over ons
+            <span className={getMenuUnderlineClass("/over")} />
           </Link>
           <Link to="/contact" className={getMenuLinkClass("/contact")}>
             Contact
@@ -50,10 +52,7 @@ function Header() {
         </div>
 
         {/* Toggle */}
-        <button
-          className="md:hidden text-2xl"
-          onClick={() => setIsOpen(true)}
-        >
+        <button className="md:hidden text-2xl" onClick={() => setIsOpen(true)}>
           ☰
         </button>
       </nav>
@@ -68,17 +67,18 @@ function Header() {
         <div className="flex items-center justify-between px-6 py-6">
           <img src={logo} alt="logo" className="h-10 w-auto" />
 
-          <button
-            className="text-3xl"
-            onClick={() => setIsOpen(false)}
-          >
+          <button className="text-3xl" onClick={() => setIsOpen(false)}>
             ✕
           </button>
         </div>
 
         {/* Links */}
         <div className="flex flex-col items-center justify-center flex-1 gap-8 text-xl z-10">
-          <Link to="/" className={getMenuLinkClass("/")} onClick={() => setIsOpen(false)}>
+          <Link
+            to="/"
+            className={getMenuLinkClass("/")}
+            onClick={() => setIsOpen(false)}
+          >
             Home
             <span className={getMenuUnderlineClass("/")} />
           </Link>
@@ -90,14 +90,7 @@ function Header() {
             Diensten
             <span className={getMenuUnderlineClass("/diensten")} />
           </Link>
-          <Link
-            to="/over"
-            className={getMenuLinkClass("/over")}
-            onClick={() => setIsOpen(false)}
-          >
-            Over mij
-            <span className={getMenuUnderlineClass("/over")} />
-          </Link>
+
           <Link
             to="/projecten"
             className={getMenuLinkClass("/projecten")}
@@ -105,6 +98,14 @@ function Header() {
           >
             Projecten
             <span className={getMenuUnderlineClass("/projecten")} />
+          </Link>
+          <Link
+            to="/over"
+            className={getMenuLinkClass("/over")}
+            onClick={() => setIsOpen(false)}
+          >
+            Over ons
+            <span className={getMenuUnderlineClass("/over")} />
           </Link>
           <Link
             to="/contact"

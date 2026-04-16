@@ -19,7 +19,7 @@ function Project({
 }) {
   return (
     <section
-      className={`flex flex-col items-center gap-10 px-6 py-16 md:gap-24 md:p-24 ${
+      className={`flex flex-col items-center gap-8 px-6 py-14 md:gap-24 md:p-24 ${
         reverse ? "md:flex-row-reverse" : "md:flex-row"
       } ${className}`}
     >
@@ -40,7 +40,7 @@ function Project({
         <Title title={title} />
         <Text text={text} />
         <ServicesList services={services} />
-        <VisitWebsiteButton href={websiteUrl} />
+        <VisitWebsiteButton href={websiteUrl} className="mt-2 md:mt-0" />
       </div>
     </section>
   );

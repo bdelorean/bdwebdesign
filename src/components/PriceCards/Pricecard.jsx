@@ -4,7 +4,7 @@ const whatsappLink =
 function Pricecard({ label, badge, title, price, features, highlighted }) {
   return (
     <div
-      className={`relative flex flex-col items-center gap-2 rounded-2xl p-20 md:p-10 shadow-lg transition-all duration-300 ease-out hover:-translate-y-[2px] hover:shadow-[0_10px_12px_rgba(15,23,42,0.18)]
+      className={`relative flex flex-col items-center gap-2 rounded-2xl p-8 md:p-10 shadow-lg transition-all duration-300 ease-out hover:-translate-y-[2px] hover:shadow-[0_10px_12px_rgba(15,23,42,0.18)]
         ${highlighted ? "bg-primary text-white md:scale-105" : "bg-white"}`}
     >
       {/* BADGE */}

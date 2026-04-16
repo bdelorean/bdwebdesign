@@ -7,7 +7,7 @@ function SecondaryButton({ to, href, text }) {
         href={href}
         target="_blank"
         rel="noopener noreferrer"
-        className="border-2 border-primary text-primary font-heading text-lg px-9 py-4 rounded-xl font-semibold transition-all duration-300 ease-out hover:bg-primary hover:text-textWhite"
+        className="border-2 border-primary text-primary font-heading text-lg text-center px-9 py-4 rounded-xl font-semibold transition-all duration-300 ease-out hover:bg-primary hover:text-textWhite"
       >
         {text}
       </a>

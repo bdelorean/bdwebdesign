@@ -9,6 +9,7 @@ import promoSpik from "../assets/images/promoSpik.webp";
 import promoWTW from "../assets/images/promoWTW.webp";
 import promoMartinus from "../assets/images/promoMartinus.webp";
 import promoBeauty from "../assets/images/promoBeauty.webp";
+
 const whatsappOfferLink =
   "https://wa.me/31626239678?text=Hoi!%20Ik%20wil%20graag%20een%20offerte%20aanvragen%20voor%20een%20website.";
 
@@ -17,7 +18,6 @@ const whatsappLink =
 
 function Projecten() {
   useEffect(() => {
-    // Watch images and reveal them when they enter the viewport
     const elements = document.querySelectorAll(".reveal-up");
 
     const observer = new IntersectionObserver(
@@ -36,7 +36,6 @@ function Projecten() {
 
     elements.forEach((element) => observer.observe(element));
 
-    // Clean up the observer on unmount
     return () => observer.disconnect();
   }, []);
 
@@ -53,16 +52,17 @@ function Projecten() {
               </>
             }
           />
-          <div className="flex flex-col md:flex-row space-between gap-9">
+          <div className="flex flex-col gap-9 md:flex-row space-between">
             <PrimaryButton
               href={whatsappOfferLink}
-              text="Offerte aanvragen →"
+              text="Offerte aanvragen ->"
               className="shadow-[0_4px_10px_theme(colors.accent/25%)]"
             />
             <SecondaryButton href={whatsappLink} text="Gratis advies" />
           </div>
         </div>
       </HeroInner>
+
       <Project
         image={promoSpik}
         imageAlt="Website preview van Spik & Span met Simona"
@@ -82,7 +82,7 @@ Samen met de klant zijn de diensten logisch gestructureerd, zodat bezoekers eenv
         imageAlt="Website preview van WTW Pedicure"
         badge="MEDISCH PEDICURE SALON"
         title="WTW Pedicure"
-        text={`WTW Pedicure is een website voor een medisch pedicuresalon. Het design is subtiel en uitgevoerd in een boho-stijl, volledig afgestemd op de wensen van de klant. De informatie is logisch en overzichtelijk opgebouwd, zodat bezoekers snel vinden wat ze zoeken — van uitleg over de behandelingen tot een duidelijke prijslijst.`}
+        text={`WTW Pedicure is een website voor een medisch pedicuresalon. Het design is subtiel en uitgevoerd in een boho-stijl, volledig afgestemd op de wensen van de klant. De informatie is logisch en overzichtelijk opgebouwd, zodat bezoekers snel vinden wat ze zoeken - van uitleg over de behandelingen tot een duidelijke prijslijst.`}
         services="Uitgevoerde diensten: custom design, copywriting, website ontwikkeling en logo ontwerp."
         websiteUrl="https://wtwpedicure.nl"
       />

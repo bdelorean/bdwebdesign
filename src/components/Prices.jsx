@@ -5,9 +5,10 @@ import Pricecards from "./PriceCards/PriceCards";
 
 function Prices() {
   return (
-    <div className="p-6 md:p-24 gap-12 flex flex-col">
+    <section id="prijzen" className="flex flex-col gap-12 p-6 md:p-24">
       <div className="flex flex-col items-center gap-4">
-        <Title title="KIES HET JUISTE PAKKET" />
+        <Title title="KIES HET JUISTE PAKKET" 
+        className="text-center"/>
         <Subheading
           className="text-center"
           subheading={
@@ -19,7 +20,7 @@ function Prices() {
         />
       </div>
       <Pricecards />
-    </div>
+    </section>
   );
 }
 
